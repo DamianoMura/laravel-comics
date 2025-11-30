@@ -3,10 +3,10 @@ $links=config('links');
 ?>
 <header>
 
-    <nav class="container flex justify-between items-center h-16 mx-auto border-b-2 border-gray-200">
+    <nav class="container flex justify-between items-center mx-auto border-b-2 py-4 border-gray-200">
         <div>
             <a href="/">
-            <img src="{{Vite::asset('./resources/img/dc-logo.png')}}" alt="DC Logo" class="h-10 ml-4"></a>
+            <img src="{{Vite::asset('./resources/img/dc-logo.png')}}" alt="DC Logo" class="h-20 ml-4"></a>
             
         </div>
         <div class="hidden lg:flex">
