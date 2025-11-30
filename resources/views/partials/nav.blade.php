@@ -6,7 +6,7 @@ $links=config('links');
     <nav class="container flex justify-between items-center mx-auto border-b-2 py-8 border-gray-200">
         <div>
             <a href="/">
-            <img src="{{Vite::asset('./resources/img/dc-logo.png')}}" alt="DC Logo" class="h-20 ml-4"></a>
+            <img src="{{Vite::asset('./resources/img/dc-logo.png')}}" alt="DC Logo" class="h-20"></a>
             
         </div>
         <div class="hidden lg:flex">
