@@ -9,3 +9,21 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+
+
+.jumbotron {
+    background-image:url('../img/jumbotron.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: -50px;
+    height: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+    .jumbotron {
+        height: 150px;
+    }
+}
+
