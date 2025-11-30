@@ -23,7 +23,7 @@ $links=config('links');
         <hr>
         
     </nav>
-    <div class="jumbotron">
+    <div class="jumbotron bg-cover bg-no-repeat h-48" style="background-image: url({{Vite::asset('./resources/img/jumbotron.jpg')}})">
     
     
     </div>
