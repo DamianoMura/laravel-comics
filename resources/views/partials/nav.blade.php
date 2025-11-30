@@ -3,7 +3,7 @@ $links=config('links');
 ?>
 <header>
 
-    <nav class="container flex justify-between items-center mx-auto border-b-2 py-4 border-gray-200">
+    <nav class="container flex justify-between items-center mx-auto border-b-2 py-8 border-gray-200">
         <div>
             <a href="/">
             <img src="{{Vite::asset('./resources/img/dc-logo.png')}}" alt="DC Logo" class="h-20 ml-4"></a>
