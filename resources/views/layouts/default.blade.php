@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -20,7 +21,13 @@
         @endif
     </head>
     <body>
+      <header>
+        <!--Header-->
+        @include('partials.header')
+        
+      </header>
         <div class="container">
+            
             @yield('content')
         </div>
     </body>
