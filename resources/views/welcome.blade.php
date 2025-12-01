@@ -1,52 +1,48 @@
 @extends('layouts.default')
 @section('content')
-    <div class="container justify-between items-center mx-auto py-8">
-        <div class="flex justify-between items-center ">
-            <img src="https://lwfiles.mycourse.app/6368e5089f20781a7e4f1805-public/2c162927114072f9ebbf04043a593fb9.png" alt="Laravel Framework"     class="mb-4 h-15" >
-            <h3 class="text-4xl p-1">Specializzazione Web Development </h3>
-        </div>
-        <hr>
-        <div class="flex py-2 items-center">
-            <img class="h-10" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"alt="PHP Logo">
-            <img class="h-15" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo">
-          
-        </div>        
-                
-          
-            
+    <div class="container mx-auto my-5 text-center">
+        <!-- class description section -->
+        <section class="flex-col md:flex-row items-center justify-between mb-10">
+            <div >
+                <div class="flex-col md:flex-row flex items-center justify-between">
+                    <img src="https://lwfiles.mycourse.app/6368e5089f20781a7e4f1805-public/2c162927114072f9ebbf04043a593fb9.png" alt="Laravel Framework"     class="mb-4 h-15" >
+                    <h3 class="text-4xl p-1 text-center">Specializzazione Web Development </h3>
 
-        <div class="flex align-center justify-center my-5">
-            
-            <div class="container flex-column justify-center items-center mx-auto py-4">
-                
-                
-                <h2 class="text-5xl">EX - Laravel comics</h2>
-                
-                <h3 class="text-3xl">Nome repo: laravel-comics</h3>
-                
-                
+                </div>
+                <div class="items-center flex gap-6 justify-end">
+                    <img class="h-10" src="{{ Vite::asset('./resources/img/PHP-logo.svg') }}" alt="PHP Logo">
+                    <img class="h-15" src="{{ Vite::asset('./resources/img/laravel-logo.svg') }}" alt="Laravel Logo">
+                  
+                </div>        
             </div>
-            
-            <a href="/comics" class="flex rounded-full bg-blue-950 text-white text-center p-10"> visualizza esercizio </a>
-            
-    </div>
-
-
-
-
-  
-
+            <hr>
+        </section>
+        <!-- exercise description section -->
         
-        
-        
-        
-        <p class="my-5 text-lg font-bold">
-            Proviamo a replicare il layout di un sito basandoci sullo 
-            <a href="{{Vite::asset('./resources/img/screenshot.png')}}" class="underline">screenshot</a> in allegato!
-        </p>
-
-        
-        
-    
-    
+        <section class="flex-col justify-between">
+            <div>
+                <h2 class="text-5xl">EX - Laravel comics</h2>
+                <h3 class="text-3xl">Nome repo: laravel-comics</h3>
+                <p class="my-5 text-lg font-bold">
+                    Proviamo a replicare il layout di un sito basandoci sullo
+                    <a href="{{Vite::asset('./resources/img/screenshot.png')}}" class="underline">screenshot</a> in allegato!
+                </p>
+            </div>
+            <div>
+                <h2 class="text-2xl mb-4">Obiettivi:</h2>
+                <ul class="list-disc list-inside text-lg font-bold">
+                    <li>Utilizzare Blade Templating Engine</li>
+                    <li>Creare layout riutilizzabili con Blade</li>
+                    <li>Utilizzare i dati da file di configurazione</li>
+                    <li>Gestire le risorse statiche con Vite</li>
+                </ul>
+            </div>
+                <div>
+                    
+                        <a href="/comics"  class="mt-6 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Vai all'esercizio 
+                        </a>    
+                </div>
+        </section> 
+     
 @endsection 

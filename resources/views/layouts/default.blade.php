@@ -17,11 +17,17 @@
         
     </head>
     <body>
+   
+            <!--Header-->
+        @if (Request::url() !== "http://127.0.0.1:8000")
+            <header>
+                @include('partials.nav')
+            </header>
+            
+        @endif
+            
+       
         
-        <!--Header-->
-        <header>
-            @include('partials.nav')
-        </header>
 
         <main class="min-h-screen">
             @yield('content')
