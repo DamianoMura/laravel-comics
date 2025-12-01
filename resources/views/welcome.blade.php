@@ -5,7 +5,7 @@
 
 
 
-    <main class="container my-5 text-center">
+  
         <div class="container flex justify-between items-center mx-auto border-b-2 py-4 border-gray-200 ms-10">
             <img src="https://lwfiles.mycourse.app/6368e5089f20781a7e4f1805-public/2c162927114072f9ebbf04043a593fb9.png"
                 alt="Laravel Framework"     class="mb-4 h-15" >
@@ -39,6 +39,6 @@
 
         
         
-    </main>
+    
     
 @endsection 
