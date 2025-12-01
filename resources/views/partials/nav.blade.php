@@ -1,17 +1,18 @@
 <?php
 $links=config('links');
 ?>
-<header>
 
-    <nav class="container flex justify-between items-center mx-auto border-b-2 py-8 border-gray-200">
+
+    <nav class="container mx-auto flex justify-between items-center py-4">
         <div>
             <a href="/">
-            <img src="{{Vite::asset('./resources/img/dc-logo.png')}}" alt="DC Logo" class="h-20"></a>
-            
+                <img src="{{Vite::asset('./resources/img/dc-logo.png')}}" alt="DC Logo" class="h-20">
+            </a>
         </div>
+            
         <div class="hidden lg:flex">
-            <ul class="flex">
-               <li class="flex gap-6 mr-4">
+            <ul class="flex-end">
+               <li class="flex gap-6">
                 @foreach ($links as $link)
                 <a href="{{ $link['url'] }}" class=" uppercase font-bold hover:underline">
                     {{ $link['label'] }}
@@ -20,14 +21,35 @@ $links=config('links');
                </li>
             </ul>
         </div>
-        <hr>
+
+        <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+        <el-dropdown class="inline-block lg:hidden">
+            <button
+                class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-gray-50">
+                menù
+                
+            </button>
+        
+            <el-menu anchor="bottom end " popover
+                class="p-3 w-56 origin-top-right rounded-md bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                <div class="py-1">
+                   <ul >
+                    <li class="flex flex-col gap-4  ">
+                        @foreach ($links as $link)
+                        <a href="{{ $link['url'] }}" class=" uppercase font-bold hover:underline">
+                            {{ $link['label'] }}
+                        </a>
+                        @endforeach
+                    </li>
+                </ul>
+                </div>
+            </el-menu>
+        </el-dropdown>
         
     </nav>
-    <div class="jumbotron bg-cover bg-no-repeat h-50 md:h-75 lg:h-100 " style="background-image: url({{Vite::asset('./resources/img/jumbotron.jpg')}})">
-    
-    
-    </div>
-</header>
+    <div class="jumbotron bg-cover bg-no-repeat h-50 md:h-75 lg:h-100 " style="background-image: url({{Vite::asset('./resources/img/jumbotron.jpg')}})"></div>
+
 
 
 

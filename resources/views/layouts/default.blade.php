@@ -17,14 +17,18 @@
         
     </head>
     <body>
-     
+        
         <!--Header-->
-        @include('partials.nav')
-        
-        
-        <div class="container">
-            
+        <header>
+            @include('partials.nav')
+        </header>
+
+        <main class="min-h-screen">
             @yield('content')
-        </div>
+        </main>
+        <footer>
+            @include('partials.footer')
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     </body>
 </html>
