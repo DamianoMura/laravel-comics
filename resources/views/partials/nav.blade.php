@@ -6,18 +6,14 @@ $links=config('links');
     <nav class="container mx-auto flex justify-between items-center py-4">
         <div>
             <a href="/">
-                <img src="{{Vite::asset('./resources/img/dc-logo.png')}}" alt="DC Logo" class="h-20">
+                logo
             </a>
         </div>
             
         <div class="hidden lg:flex">
             <ul class="flex-end">
                <li class="flex gap-6">
-                @foreach ($links as $link)
-                <a href="{{ $link['url'] }}" class=" uppercase font-bold hover:underline">
-                    {{ $link['label'] }}
-                </a>
-                @endforeach
+                links
                </li>
             </ul>
         </div>
@@ -36,11 +32,7 @@ $links=config('links');
                 <div class="py-1">
                    <ul >
                     <li class="flex flex-col gap-4  ">
-                        @foreach ($links as $link)
-                        <a href="{{ $link['url'] }}" class=" uppercase font-bold hover:underline">
-                            {{ $link['label'] }}
-                        </a>
-                        @endforeach
+                      links
                     </li>
                 </ul>
                 </div>
@@ -48,7 +40,7 @@ $links=config('links');
         </el-dropdown>
         
     </nav>
-    <div class="jumbotron bg-cover bg-no-repeat h-50 md:h-75 lg:h-100 " style="background-image: url({{Vite::asset('./resources/img/jumbotron.jpg')}})"></div>
+
 
 
 

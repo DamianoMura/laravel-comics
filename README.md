@@ -14,9 +14,15 @@
 
 ---
 
-# EX - Laravel comics
+# EX - blank project
 
 ## Descrizione
+
+this branch repo is a base app with no login:
+
+intended for use with laravel 12 and php 8.4
+
+the filesystem contains a default layout with header and footer already in place ready to edit.
 
 ## Nome repo: laravel-comics
 

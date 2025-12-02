@@ -1,48 +1,10 @@
 @extends('layouts.default')
 @section('content')
     <div class="container mx-auto my-5 text-center">
-        <!-- class description section -->
-        <section class="flex-col md:flex-row items-center justify-between mb-10">
-            <div >
-                <div class="flex-col md:flex-row flex items-center justify-between">
-                    <img src="https://lwfiles.mycourse.app/6368e5089f20781a7e4f1805-public/2c162927114072f9ebbf04043a593fb9.png" alt="Laravel Framework"     class="mb-4 h-15" >
-                    <h3 class="text-4xl p-1 text-center">Specializzazione Web Development </h3>
-
-                </div>
-                <div class="items-center flex gap-6 justify-end">
-                    <img class="h-10" src="{{ Vite::asset('./resources/img/PHP-logo.svg') }}" alt="PHP Logo">
-                    <img class="h-15" src="{{ Vite::asset('./resources/img/laravel-logo.svg') }}" alt="Laravel Logo">
-                  
-                </div>        
-            </div>
-            <hr>
-        </section>
-        <!-- exercise description section -->
+       
+        <h1 class="text-4xl font-bold mb-4">Welcome to JDWDEV:IT base Laravel project : {{config('app.name')}}</h1>
+        <p class="text-lg text-gray-700">This is the welcome page of your Laravel application.</p>
         
-        <section class="flex-col justify-between">
-            <div>
-                <h2 class="text-5xl">EX - Laravel comics</h2>
-                <h3 class="text-3xl">Nome repo: laravel-comics</h3>
-                <p class="my-5 text-lg font-bold">
-                    Proviamo a replicare il layout di un sito basandoci sullo
-                    <a href="{{Vite::asset('./resources/img/screenshot.png')}}" class="underline">screenshot</a> in allegato!
-                </p>
-            </div>
-            <div>
-                <h2 class="text-2xl mb-4">Obiettivi:</h2>
-                <ul class="list-disc list-inside text-lg font-bold">
-                    <li>Utilizzare Blade Templating Engine</li>
-                    <li>Creare layout riutilizzabili con Blade</li>
-                    <li>Utilizzare i dati da file di configurazione</li>
-                    <li>Gestire le risorse statiche con Vite</li>
-                </ul>
-            </div>
-                <div>
-                    
-                        <a href="/comics"  class="mt-6 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            Vai all'esercizio 
-                        </a>    
-                </div>
-        </section> 
+        jdwdev.it
      
 @endsection 

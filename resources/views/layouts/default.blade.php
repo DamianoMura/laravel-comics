@@ -19,12 +19,12 @@
     <body>
        
             <!--Header-->
-        @if (Request::url() !== "http://".$_SERVER["HTTP_HOST"]) <!-- Check if not on homepage -->
+        
             <header>
                 @include('partials.nav')
             </header>
            
-        @endif
+
             
        
         
