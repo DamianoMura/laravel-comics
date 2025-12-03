@@ -12,3 +12,13 @@
 
 
 
+.comics-label{
+    background-color: rgb(51, 112, 253);
+    color: white;
+    position : absolute;
+    top : -60px;
+    transform: translate(-20px);
+    padding :10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

@@ -18,23 +18,21 @@
     </head>
     <body>
        
-            <!--Header-->
-        @if (Request::url() !== "http://".$_SERVER["HTTP_HOST"]) <!-- Check if not on homepage -->
+       
             <header>
                 @include('partials.nav')
             </header>
-           
-        @endif
+            <main class="min-h-screen">
+                @yield('content')
+            </main>
             
-       
+            <footer>
+                @include('partials.footer')
+            </footer>
         
-
-        <main class="min-h-screen">
-            @yield('content')
-        </main>
-        <footer>
-            @include('partials.footer')
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+            
+            
+            
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     </body>
 </html>

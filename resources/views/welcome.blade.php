@@ -1,5 +1,5 @@
-@extends('layouts.default')
-@section('content')
+@extends('layouts.landing')
+@section('landing')
     <div class="container mx-auto my-5 text-center">
         <!-- class description section -->
         <section class="flex-col md:flex-row items-center justify-between mb-10">
