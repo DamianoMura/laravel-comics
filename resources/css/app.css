@@ -22,3 +22,15 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+  
+.comic-card:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;   }
+    
+.comic-card img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 5px;
+    }
