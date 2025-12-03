@@ -1,6 +1,6 @@
 <?php
 
-$links = [
+return [
 
   ["label" => "characters", "url" => "#"],
   ["label" => "comics", "url" => "/comics"],
@@ -16,4 +16,3 @@ $links = [
 
 
 ];
-return $links;

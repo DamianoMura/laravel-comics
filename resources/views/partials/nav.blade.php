@@ -1,6 +1,4 @@
-<?php
-$links=config('links');
-?>
+
 
 
     <nav class="container mx-auto text-center flex justify-between items-center px-30 py-5">
